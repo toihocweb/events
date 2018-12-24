@@ -36,11 +36,10 @@ export class NavBar extends Component {
               Welcome
             </Menu.Item>
             <Menu.Item name="Events" as={NavLink} to='/events' />
-            <Menu.Item name="Test" as={NavLink} to='/test' />
             {authenticated && <Menu.Item name="People" as={NavLink} to='/people' />}
             {authenticated &&
               <Menu.Item>
-                <Button floated="right" positive inverted content="Create Event" />
+                <Button floated="right" positive inverted content="Create Event"   as = {Link} to = {`/createEvent`}/>
               </Menu.Item>
             }
             {authenticated ? <SignedInMenu signOut={this.handleSignOut} /> : <SignedOutMenu signIn={this.handleLogin} />}

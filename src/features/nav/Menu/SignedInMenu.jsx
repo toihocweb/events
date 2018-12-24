@@ -9,7 +9,7 @@ const SignedInMenu = (props) => {
             <Image avatar spaced="right" src='/assets/avatar.png' />
             <Dropdown pointing="top left" text="Username">
                 <Dropdown.Menu>
-                    <Dropdown.Item text="Create Event" icon="plus" />
+                    <Dropdown.Item as={Link} to='/createEvent' text="Create Event" icon="plus" />
                     <Dropdown.Item text="My Events" icon="calendar" />
                     <Dropdown.Item text="My Network" icon="users" />
                     <Dropdown.Item text="My Profile" icon="user" />
